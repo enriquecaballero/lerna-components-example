@@ -1,15 +1,11 @@
 {
-  "name": "hhs",
+  "name": "lerna-components-example",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@dev.visionistinc.com:data_science/HHS.git"
-  },
+  "license": "UNLICENSED",
   "scripts": {
     "start": "yarn lerna run start --stream --parallel",
     "lerna": "lerna",

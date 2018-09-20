@@ -1,1 +1,1 @@
-# lerna-example
+# lerna-components-example

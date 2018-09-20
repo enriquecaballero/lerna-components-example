@@ -13,14 +13,14 @@ const devServer = {
   contentBase: path.resolve(ROOT, "dist"),
   publicPath: "/",
   stats: { colors: true },
-  port: 2223
+  port: 2221
 };
 
 module.exports = Object.assign({}, webpackConfig, {
   devtool: "source-map",
   mode: "development",
   devServer,
-  plugins: webpackConfig.plugins.concat([
+  plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: packageJSON.name,
@@ -29,5 +29,5 @@ module.exports = Object.assign({}, webpackConfig, {
       inject: "body",
       filename: "index.html"
     })
-  ])
+  ]
 });
